@@ -15,6 +15,7 @@ using React.AspNet;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using JavaScriptEngineSwitcher.ChakraCore;
+using Microsoft.AspNetCore.Routing;
 
 namespace ReactWithMVC
 {
@@ -30,6 +31,11 @@ namespace ReactWithMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages();
+            services.Configure<RouteOptions>(routeOptions =>
+            {
+                routeOptions.LowercaseUrls = true;
+            });
             services.AddControllersWithViews();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddReact();
@@ -64,7 +70,7 @@ namespace ReactWithMVC
                 //    .AddScript("~/js/First.jsx")
                 //    .AddScript("~/js/Second.jsx");
                 config
-                    .AddScript("~/js/App.jsx");
+                    .AddScript("~/dist/Login.js");
             });
 
             app.UseRouting();
@@ -76,6 +82,7 @@ namespace ReactWithMVC
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

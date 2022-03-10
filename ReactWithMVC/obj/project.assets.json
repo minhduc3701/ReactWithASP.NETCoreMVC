@@ -3088,19 +3088,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ducnm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ReactWithMVC\\ReactWithMVC\\ReactWithMVC\\ReactWithMVC.csproj",
+      "projectUniqueName": "D:\\ReactWithASP.NetCoreMVC\\ReactWithASP.NETCoreMVC\\ReactWithMVC\\ReactWithMVC.csproj",
       "projectName": "ReactWithMVC",
-      "projectPath": "D:\\ReactWithMVC\\ReactWithMVC\\ReactWithMVC\\ReactWithMVC.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\ReactWithMVC\\ReactWithMVC\\ReactWithMVC\\obj\\",
+      "projectPath": "D:\\ReactWithASP.NetCoreMVC\\ReactWithASP.NETCoreMVC\\ReactWithMVC\\ReactWithMVC.csproj",
+      "packagesPath": "C:\\Users\\ducnm\\.nuget\\packages\\",
+      "outputPath": "D:\\ReactWithASP.NetCoreMVC\\ReactWithASP.NETCoreMVC\\ReactWithMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ducnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3108,7 +3108,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/add-on-products/6584875d-504b-45b0-b33b-3c4126498e06/_packaging/NugetPkg/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -3181,7 +3182,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
