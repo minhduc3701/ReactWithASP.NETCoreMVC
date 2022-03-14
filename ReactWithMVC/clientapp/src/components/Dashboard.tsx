@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import ReactDOM from "react-dom";
 import Button from "../Dependencies/Button";
 
 export default class Dashboard extends React.Component<any, any> {
@@ -22,13 +22,17 @@ export default class Dashboard extends React.Component<any, any> {
     }
 
     if (this.state.isRedirect) {
-      return <Redirect to="/" />;
+      return (window.location.href = "/");
+      // return <Redirect to="/" />;
     }
 
     return (
-      <div className="dashboardWrapper">
+      <div className="dashboardWrapper" style={{ padding: "20px 50px" }}>
         <h1>Dashboard</h1>
-        <div className="db__nav">
+        <div
+          className="db__nav"
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <Button
             type="Primary"
             text="Create"
@@ -64,3 +68,5 @@ export default class Dashboard extends React.Component<any, any> {
     );
   }
 }
+
+ReactDOM.render(<Dashboard />, document.getElementById("root"));

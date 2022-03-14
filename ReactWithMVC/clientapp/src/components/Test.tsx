@@ -37,7 +37,7 @@ export const RenderRouteHandleRoutesByRole = (
 export default class Test extends React.Component<any, any> {
   render() {
     return (
-      <div className="userWrapper">
+      <div className="userWrapper" style={{ padding: "20px 50px" }}>
         <Switch>
           <Route path={"/test"} component={TestWrapper} exact />
           <RenderRouteHandleRoutesByRole
@@ -64,5 +64,5 @@ ReactDOM.render(
       <Test />
     </Router>
   </React.StrictMode>,
-  document.getElementById("root-test")
+  document.getElementById("root")
 );

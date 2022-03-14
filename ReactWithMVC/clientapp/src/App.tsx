@@ -1,13 +1,11 @@
 import React from "react";
+import { Redirect, Route, RouteProps, Switch } from "react-router-dom";
 import "./App.css";
-import Login from "./components/Login";
+import { configRouteBaseOnRole } from "./common/data";
 import Admin from "./components/Admin";
 import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
 import User from "./components/User";
-import { Redirect, Route, RouteProps, Switch } from "react-router-dom";
-import { configRouteBaseOnRole } from "./common/data";
-import Test1 from "./components/Test/Test1";
-import Test2 from "./components/Test/Test2";
 
 export interface IRenderRouteHandleRoutesByRoleProps extends RouteProps {
   redirectUrl?: string;
@@ -47,7 +45,7 @@ function App() {
           exact
         />
         <RenderRouteHandleRoutesByRole path={"/user"} component={User} exact />
-        <RenderRouteHandleRoutesByRole
+        {/* <RenderRouteHandleRoutesByRole
           path={"/test1"}
           component={Test1}
           exact
@@ -56,7 +54,7 @@ function App() {
           path={"/test2"}
           component={Test2}
           exact
-        />
+        /> */}
       </Switch>
     </div>
   );

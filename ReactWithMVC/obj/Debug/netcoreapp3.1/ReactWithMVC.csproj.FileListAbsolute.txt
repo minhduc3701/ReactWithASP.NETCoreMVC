@@ -155,3 +155,4 @@ D:\ReactWithASP.NetCoreMVC\ReactWithASP.NETCoreMVC\ReactWithMVC\obj\Debug\netcor
 D:\ReactWithASP.NetCoreMVC\ReactWithASP.NETCoreMVC\ReactWithMVC\obj\Debug\netcoreapp3.1\Razor\Pages\Test.cshtml.g.cs
 D:\ReactWithASP.NetCoreMVC\ReactWithASP.NETCoreMVC\ReactWithMVC\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
 D:\ReactWithASP.NetCoreMVC\ReactWithASP.NETCoreMVC\ReactWithMVC\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+D:\ReactWithASP.NetCoreMVC\ReactWithASP.NETCoreMVC\ReactWithMVC\obj\Debug\netcoreapp3.1\Razor\Pages\Dashboard.cshtml.g.cs

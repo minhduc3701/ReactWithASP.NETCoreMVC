@@ -1,6 +1,6 @@
 import React from "react";
-import axios from "axios";
 import { Redirect } from "react-router-dom";
+import Button from "../Dependencies/Button";
 
 export default class Login extends React.Component<any, any> {
   constructor(props: any) {
@@ -64,24 +64,35 @@ export default class Login extends React.Component<any, any> {
     }
     return (
       <form className="loginWrapper">
-        <h3>Đăng nhập</h3>
+        <h3 style={{ textTransform: "uppercase" }}>Đăng nhập</h3>
         <input
           type="text"
           placeholder="Tên đăng nhập"
           onChange={(e) => this.onHandleInput(e, "user")}
           value={this.state.user}
+          className="frm__input"
         />
         <input
           type="password"
           placeholder="Mật khẩu"
           onChange={(e) => this.onHandleInput(e, "password")}
           value={this.state.password}
+          className="frm__input"
         />
         <div className="actionWrapper">
-          <button onClick={this.onHandleSubmit} type="submit">
-            Đăng nhập
-          </button>
-          <button onClick={this.onHandleClear}>Xóa trắng</button>
+          <Button
+            type="Primary"
+            text="Đăng nhập"
+            darkMode="light"
+            style={{ margin: "0 5px" }}
+            onClick={this.onHandleSubmit}
+          />
+          <Button
+            text="Xóa trắng"
+            darkMode="light"
+            style={{ margin: "0 5px" }}
+            onClick={this.onHandleClear}
+          />
         </div>
       </form>
     );
